@@ -35,7 +35,7 @@ const SendForm = () => {
     // date.unshift(y);
     // let d = date.join("-");
 
-    return `${d} ${time}`;
+    return `${date} ${time}`;
   };
 
   // console.log(myUuid());
