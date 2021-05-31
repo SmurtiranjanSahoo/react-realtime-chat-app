@@ -31,6 +31,8 @@ import ForgetPassword from "./Pages/ForgetPassword";
 import { UserContext } from "./Context/Context";
 import { Container } from "reactstrap";
 
+require("dotenv").config();
+
 // Initialize firebase
 firebase.initializeApp(firebaseConfig);
 

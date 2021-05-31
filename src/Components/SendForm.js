@@ -23,16 +23,19 @@ const SendForm = () => {
 
   const myUuid = () => {
     var time = new Date().toTimeString().split(" ")[0];
-    // const date = new Date().toISOString().split("T")[0];
-    const date = new Date()
-      .toLocaleDateString()
-      .replaceAll(`/`, `-`)
-      .split("-")
-      .reverse()
-      .join("-");
+    const date = new Date().toISOString().split("T")[0];
+    // const date = new Date().toLocaleDateString().replaceAll(`/`, ``);
+
+    // // .reverse()
+    // // .join("-");
     // let y = date[2];
     // date.pop();
     // date.unshift(y);
+    // let m = date.pop();
+    // if (m.charAt(0) === "0") {
+    //   var mnew = m.charAt(1);
+    // }
+    // date.push(mnew);
     // let d = date.join("-");
 
     return `${date} ${time}`;

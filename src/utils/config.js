@@ -1,12 +1,14 @@
+require("dotenv").config();
+
 export const firebaseConfig = {
-  apiKey: "AIzaSyC7qOBt-txHVPje1UMz3TFF4BFXA7nzFR0",
-  authDomain: "chat-app-7338d.firebaseapp.com",
-  databaseURL: "https://chat-app-7338d-default-rtdb.firebaseio.com",
-  projectId: "chat-app-7338d",
-  storageBucket: "chat-app-7338d.appspot.com",
-  messagingSenderId: "486394003148",
-  appId: "1:486394003148:web:29492f4acf918139e4cc69",
-  measurementId: "G-76Q644NHYB",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 //image configuration
