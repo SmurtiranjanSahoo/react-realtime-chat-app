@@ -18,10 +18,10 @@ const Home = () => {
   }
 
   return (
-    <Container fluid className="App ">
+    <div className="App">
       <ContainerChat />
       <SendForm />
-    </Container>
+    </div>
   );
 };
 

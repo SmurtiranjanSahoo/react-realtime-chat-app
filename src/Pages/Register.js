@@ -38,6 +38,7 @@ const Register = () => {
         user.updateProfile({
           displayName: name,
           photoURL: userDefaultImg,
+          appName: "Chitter Chatter",
         });
         user.sendEmailVerification();
       })

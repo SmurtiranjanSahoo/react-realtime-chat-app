@@ -69,12 +69,13 @@ const SendForm = () => {
   };
 
   return (
-    <Container className="fixed-bottom mb-4">
+    <Container className="send-from">
       <MessageContext.Provider value={{ messageTime, userName, userPhoto }}>
         <Form onSubmit={handleSubmit}>
           <FormGroup>
-            <InputGroup>
+            <InputGroup className="shadow-none">
               <Input
+                className="shadow-none"
                 type="text"
                 name="message"
                 placeholder="Type a message"
@@ -90,9 +91,18 @@ const SendForm = () => {
                   //console.log(messages);
                 }}
               />
-              <Button color="primary" className="px-4">
+              <button
+                style={{
+                  outline: "none",
+                  border: "none",
+                  borderRadius: "0px 5px 5px 0",
+                  background: "#0d6efd",
+                  color: "#ffffff",
+                }}
+                className="px-4"
+              >
                 Send
-              </Button>
+              </button>
             </InputGroup>
           </FormGroup>
         </Form>

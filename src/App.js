@@ -48,24 +48,20 @@ function App() {
     }
   }, []);
 
-  // firebase.auth.onAuthStateChanged( user)
-
   return (
     <Router>
       <UserContext.Provider value={{ user, setUser }}>
         <ToastContainer />
         <Header />
-        <Container>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/signin" component={SignIn} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/verifyemail" component={EmailVerification} />
-            <Route exact path="/account" component={Account} />
-            <Route exact path="/forgetpassword" component={ForgetPassword} />
-            <Route exact path="*" component={PageNotFound} />
-          </Switch>
-        </Container>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/verifyemail" component={EmailVerification} />
+          <Route exact path="/account" component={Account} />
+          <Route exact path="/forgetpassword" component={ForgetPassword} />
+          <Route exact path="*" component={PageNotFound} />
+        </Switch>
       </UserContext.Provider>
     </Router>
   );
