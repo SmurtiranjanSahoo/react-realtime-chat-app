@@ -52,6 +52,8 @@ body {
 .send-from {
   margin-top: 1.3em;
   font-family: "Poppins", sans-serif;
+  border: none;
+  margin: 20px 12px;
 }
 
 .wrapper-msg {
@@ -169,13 +171,54 @@ body {
   }
 }
 
-@media (max-height: 850px) {
+/* height queries for small screen size phones */
+@media (max-height: 600px) {
   .send-from {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .container-chat {
+    height: 85%;
+  }
+  .App {
+    height: calc(80vh - 65px);
+    margin-top: calc(15vh / 6);
+  }
+}
+
+@media (min-height: 600px) and (max-height: 700px) {
+  .send-from {
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
   .container-chat {
     height: 87%;
+  }
+  .App {
+    height: calc(85vh - 65px);
+    margin-top: calc(15vh / 4);
+  }
+}
+@media (min-height: 700px) and (max-height: 780px) {
+  .send-from {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .container-chat {
+    height: 87%;
+  }
+  .App {
+    height: calc(85vh - 65px);
+    margin-top: calc(15vh / 4);
+  }
+}
+@media (min-height: 780px) and (max-height: 850px) {
+  .send-from {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .container-chat {
+    height: 89%;
   }
   .App {
     height: calc(85vh - 65px);

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import {
   Button,
   Input,
@@ -40,7 +40,6 @@ const SendForm = () => {
 
     return `${date} ${time}`;
   };
-
   // console.log(myUuid());
 
   const sendMessage = async () => {
@@ -69,7 +68,7 @@ const SendForm = () => {
   };
 
   return (
-    <Container className="send-from">
+    <div className="send-from">
       <MessageContext.Provider value={{ messageTime, userName, userPhoto }}>
         <Form onSubmit={handleSubmit}>
           <FormGroup>
@@ -107,7 +106,7 @@ const SendForm = () => {
           </FormGroup>
         </Form>
       </MessageContext.Provider>
-    </Container>
+    </div>
   );
 };
 
