@@ -4,9 +4,11 @@
 https://chit-chatter.netlify.app
 
 ## Tech Used
-### 1. React JS
-### 2. Firebase - Authentication, Realtime Database & Storage
-### 3. BootStrap
+**1. React JS**
+<br/>
+**2. Firebase - Authentication, Realtime Database & Storage**
+<br/>
+**3. BootStrap**
 <br/>
 
 
