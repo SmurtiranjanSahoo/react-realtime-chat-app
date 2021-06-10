@@ -10,7 +10,11 @@ https://chit-chatter.netlify.app
 <br/>
 
 
-![screenshot](images/chit-chatter-1.PNG)
+<p align="center">
+  <img src="images/chit-chatter-1.PNG" />
+</p>
 
-![screenshot](images/chit-chatter-2.PNG)
+<p align="center">
+  <img src="images/chit-chatter-2.PNG" />
+</p>
 
